@@ -151,6 +151,7 @@ def station_stats(df):
         print('Number of times this particular end station was chosen for trip: ' , df2.size)
 
         # TO DO: display most frequent combination of start station and end station trip
+		# Merge the Start station and End station columns to get a combination column to hold the trip data
         df['Start and End Station'] = df['Start Station'] + ' --> ' + df['End Station']
 
         most_frequest_trip = df['Start and End Station'].mode()[0]
