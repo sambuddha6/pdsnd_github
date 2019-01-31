@@ -10,6 +10,9 @@ Write a script that takes in raw input to create an interactive experience in th
 
 ### Files used
 bikeshare.py
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
 
