@@ -238,6 +238,7 @@ def main():
             user_stats(df)
             time.sleep(3)
 
+			# Handle the individual trip detail display logic
             startindex = 0
             endindex = 5
             while True:
