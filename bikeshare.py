@@ -197,6 +197,7 @@ def user_stats(df):
         print ('Counts of user types: ' , user_types)
 
     # TO DO: Display counts of gender
+	# This check is necessary because currently the Washington.csv doesn't have the Gender column
     if 'Gender' in df.columns:
         gender = df['Gender'].value_counts()
         null_count = df['Gender'].isnull().sum()
@@ -204,6 +205,7 @@ def user_stats(df):
         print ('Count of null values in Gender column: ' , null_count)
 
     # TO DO: Display earliest, most recent, and most common year of birth
+	# This check is necessary because currently the Washington.csv doesn't have the Birth Year column
     if 'Birth Year' in df.columns:
         min_birth_year = df['Birth Year'].min()
         max_birth_year = df['Birth Year'].max()
